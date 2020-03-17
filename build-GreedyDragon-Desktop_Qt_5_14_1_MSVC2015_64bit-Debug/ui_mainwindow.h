@@ -11,15 +11,11 @@
 
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenu>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -40,9 +36,6 @@ public:
     QPushButton *pushButton_5;
     QLabel *label;
     QGraphicsView *graphicsView;
-    QMenuBar *menubar;
-    QMenu *menu;
-    QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -127,24 +120,13 @@ public:
         label->setWordWrap(false);
         graphicsView = new QGraphicsView(centralwidget);
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
-        graphicsView->setGeometry(QRect(0, 1, 801, 581));
+        graphicsView->setGeometry(QRect(0, 1, 821, 661));
         graphicsView->setInteractive(false);
         MainWindow->setCentralWidget(centralwidget);
         graphicsView->raise();
         verticalLayoutWidget->raise();
         verticalLayoutWidget_2->raise();
         label->raise();
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 26));
-        menu = new QMenu(menubar);
-        menu->setObjectName(QString::fromUtf8("menu"));
-        MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        MainWindow->setStatusBar(statusbar);
-
-        menubar->addAction(menu->menuAction());
 
         retranslateUi(MainWindow);
 
@@ -163,7 +145,6 @@ public:
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "\350\201\224\347\263\273\346\210\221\344\273\254", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "\350\256\276\347\275\256", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:16pt; color:#00ff00;\">\350\264\252 \345\220\203 \351\276\231</span></p></body></html>", nullptr));
-        menu->setTitle(QCoreApplication::translate("MainWindow", "\351\205\267\347\202\253\346\227\240\346\225\214\345\220\212\347\202\270\345\244\251------\350\264\252 \345\220\203 \351\276\231", nullptr));
     } // retranslateUi
 
 };

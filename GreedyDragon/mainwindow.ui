@@ -183,8 +183,8 @@
      <rect>
       <x>0</x>
       <y>1</y>
-      <width>801</width>
-      <height>581</height>
+      <width>821</width>
+      <height>661</height>
      </rect>
     </property>
     <property name="interactive">
@@ -196,23 +196,6 @@
    <zorder>verticalLayoutWidget_2</zorder>
    <zorder>label</zorder>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menu">
-    <property name="title">
-     <string>酷炫无敌吊炸天------贪 吃 龙</string>
-    </property>
-   </widget>
-   <addaction name="menu"/>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
   <include location="GD_resource.qrc"/>
