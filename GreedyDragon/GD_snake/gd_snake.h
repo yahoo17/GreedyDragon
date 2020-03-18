@@ -1,10 +1,11 @@
-#ifndef GD_SNAKE_H
+﻿#ifndef GD_SNAKE_H
 #define GD_SNAKE_H
 #define MAXSNAKELENGTH 40
 #include <QList>
 #include <iostream>
 #include <QDebug>
-#define cout qDebug()
+
+using std::cout;
 class vec2
 {
 public:
@@ -25,7 +26,7 @@ public:
 
 private:
     QList<vec2>  body;
-    QList<vec2>::iterator head;
+
 public:
     //打印这条蛇的坐标信息
     bool printSnake();

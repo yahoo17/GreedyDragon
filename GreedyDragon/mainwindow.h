@@ -1,10 +1,12 @@
-#ifndef MAINWINDOW_H
+﻿#ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QApplication>
 #include <QMainWindow>
 #include <QProcess>
 #include <QFile>
-#include "GD_snake/GD_SNAKE.h"
+#include "GD_snake/gd_snake.h"
+#include "GD_map/gd_map.h"
+#include "GD_map/gd_mapdlg.h"
 #include <windows.h>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

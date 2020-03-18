@@ -18,7 +18,11 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    GD_SNAKE *snake=new GD_SNAKE();
+
+
+    GD_MAPDLG *dlg=new GD_MAPDLG();
+    dlg->show();
+
 }
 
 void MainWindow::on_pushButton_2_clicked()
