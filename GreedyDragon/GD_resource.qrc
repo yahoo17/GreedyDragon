@@ -5,5 +5,6 @@
         <file>icon/people1.png</file>
         <file>icon/people4.png</file>
         <file>icon/people3.png</file>
+        <file>icon/headright.png</file>
     </qresource>
 </RCC>

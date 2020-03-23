@@ -18,6 +18,7 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+
 private:
     Ui::GD_MAPDLG *ui;
     GD_MAP *m_map;

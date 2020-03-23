@@ -20,7 +20,7 @@ public:
 class  GD_SNAKE
 {
 public:
-
+    friend class GD_MAP;
     GD_SNAKE();
     ~GD_SNAKE();
 

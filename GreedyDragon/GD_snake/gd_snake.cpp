@@ -6,11 +6,17 @@ vec2::vec2(int x,int y):x(x),y(y)
 GD_SNAKE::GD_SNAKE()
 {
 
+
     body.push_back(vec2(3,3));
-    body.push_back(vec2(3,3));
-    body.push_back(vec2(3,3));
+    body.push_back(vec2(2,3));
 
     printSnake();
+}
+
+GD_SNAKE::~GD_SNAKE()
+{
+    body.clear();
+
 }
 bool GD_SNAKE::printSnake()
 {
